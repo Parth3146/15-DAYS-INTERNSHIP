@@ -8,37 +8,65 @@
     tools:context=".CalculatorActivity">
 
     <EditText
+        android:id="@+id/etNum1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/et1"
         android:hint="Enter Number 1"
         android:layout_margin="20dp"
         android:textSize="30sp"
-        android:textStyle="italic"/>
+        android:textStyle="italic"
+        android:inputType="number"/>
 
     <EditText
+        android:id="@+id/etNum2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/et2"
         android:hint="Enter Number 2"
         android:layout_margin="20dp"
         android:textSize="30sp"
-        android:textStyle="italic"/>
+        android:textStyle="italic"
+        android:inputType="number"/>
 
     <Button
+        android:id="@+id/btnMul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
         android:layout_gravity="center"
-        android:id="@+id/subbt"/>
+        android:text="x"
+        />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="/"
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="+"
+    />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="-"
+        />
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/tvAns"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Demo"
-        android:id="@+id/tv"
+        android:text="Answer"
+        android:layout_gravity="center"
         android:textSize="30sp"
-        android:gravity="center"
-        android:layout_marginTop="20dp"/>
+        android:layout_margin="20dp"
+        android:textStyle="bold"/>
 
 </LinearLayout>
