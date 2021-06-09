@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-         gridView = findViewById(R.id.gv);
+        gridView = findViewById(R.id.gv);
         ArrayAdapter arrayAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1,activities);
         gridView.setAdapter(arrayAdapter);
 
@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
                         intent = new Intent(MainActivity.this, CalculatorActivity.class);
                         startActivity(intent);
                         break;
+
+                    case 1:
+                        intent = new Intent(MainActivity.this, WebActivity.class);
+                        startActivity(intent);
+                        break;
+
                     default:
                         Toast.makeText(MainActivity.this, "You selected "+activities[position], Toast.LENGTH_SHORT).show();
                 }
